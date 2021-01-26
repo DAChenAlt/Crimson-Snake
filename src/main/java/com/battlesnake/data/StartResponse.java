@@ -30,6 +30,7 @@ public class StartResponse {
   private TailType tailType;
   private String taunt;
   private String secondaryColor;
+  private String apiversion;
 
   public StartResponse() {
   }
