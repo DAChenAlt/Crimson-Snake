@@ -29,11 +29,7 @@ public class RequestController {
     @RequestMapping(value="/", method=RequestMethod.GET, produces="application/json")
     public StartResponse start(@RequestBody StartRequest request) {
         return new StartResponse()
-                .setName("Crimson Snake")
-                .setColor("#990000")
-                .setHeadType(HeadType.PIXEL)
-                .setTailType(TailType.BOLT)
-                .setTaunt("Crimson Snakeee");
+                .setApiversion("1");
     }
 
     @RequestMapping(value="/move", method=RequestMethod.POST, produces = "application/json")
