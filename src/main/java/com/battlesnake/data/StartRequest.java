@@ -22,7 +22,6 @@ public class StartRequest {
   private String gameId; // UUID	 
   private int width; //integer	 
   private int height; //integer	 
-  private String apiversion;
 
   public StartRequest() {
   }
