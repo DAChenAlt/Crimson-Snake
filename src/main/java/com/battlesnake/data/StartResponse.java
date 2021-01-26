@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class StartResponse {
   // required fields with default values
-  private String name = "no-name";
+  private String name = "nothing.";
   private String color = "#FF0000";
 
 	// optional parameters
@@ -39,7 +39,9 @@ public class StartResponse {
   public String getName() {
     return this.name;
   }
-
+  public String getApiversion() {
+    return this.name;
+  }
   public String getColor() {
     return this.color;
   }
@@ -78,7 +80,10 @@ public class StartResponse {
     this.color = color;
     return this;
   }
-
+  public StartResponse setApiversion(String version) {
+    this.apiversion = version;
+    return this;
+  }
   public StartResponse setHeadUrl(String headUrl) {
     this.headUrl = headUrl;
     return this;
